@@ -982,15 +982,167 @@ body::after{
 
 /* ================= RESPONSIVE ================= */
 
-@media(max-width:500px){
 
-  .auth-box{
-    width:100%;
-    padding:35px 25px;
+/* ================= EXTRA RESPONSIVE FIX (DO NOT CHANGE UI) ================= */
+
+/* LARGE SCREENS (1400px+) */
+@media (min-width: 1400px) {
+  .main {
+    padding: 40px;
   }
 
-  .auth-box h1{
-    font-size:30px;
+  .page-box {
+    padding: 35px;
+  }
+}
+
+/* LAPTOP (1200px - 1400px) */
+@media (max-width: 1400px) {
+  .navbar-search,
+  .search-input {
+    width: 220px;
+  }
+}
+
+/* TABLET LANDSCAPE */
+@media (max-width: 1100px) {
+  .dashboard-card h2 {
+    font-size: 32px;
   }
 
+  .product-image img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+  .sidebar {
+    width: 80px;
+  }
+
+  .main {
+    margin-left: 80px;
+    padding: 20px;
+  }
+
+  .sidebar a {
+    justify-content: center;
+    font-size: 0;
+    padding: 14px 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .navbar-search {
+    width: 180px;
+  }
+}
+
+/* SMALL TABLET / LARGE MOBILE */
+@media (max-width: 768px) {
+
+  .navbar-custom {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-product-form {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-box {
+    justify-content: center;
+  }
+
+  .page-box {
+    padding: 18px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .sidebar {
+    width: 70px;
+  }
+
+  .main {
+    margin-left: 70px;
+    padding: 15px;
+  }
+
+  .navbar-search,
+  .search-input {
+    width: 100%;
+  }
+
+  .notification-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 420px) {
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .dashboard-card h2 {
+    font-size: 26px;
+  }
+
+  .auth-box {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .auth-box h1 {
+    font-size: 28px;
+  }
+
+  .auth-logo {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+}
+
+/* VERY SMALL DEVICES */
+@media (max-width: 350px) {
+
+  .sidebar {
+    width: 60px;
+  }
+
+  .main {
+    margin-left: 60px;
+  }
+
+  .navbar-left h2 {
+    font-size: 22px;
+  }
 }
