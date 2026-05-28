@@ -131,7 +131,7 @@ p, span {
   padding: 12px 14px;
   margin: 6px 0;
 
-  color: var(--muted);
+  
   text-decoration: none;
 
   border-radius: 10px;
@@ -244,7 +244,7 @@ p, span {
   .navbar-search input {
     font-size: 14px;
   }
-}
+}n
 
 /* ================= INPUTS (VERCEL STYLE) ================= */
 input, select, textarea {
